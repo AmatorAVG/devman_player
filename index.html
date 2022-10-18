@@ -16,8 +16,9 @@
       color: white;
       background-color: transparent;
       font-size: x-large;
-      width: 20px;
+      width: 30px;
       margin: 5px;
+      flex-grow: 0;
     }
 
     .player {
@@ -35,6 +36,11 @@
     .buttons-bar {
       background-color: black;
       flex-grow: 0;
+      display: flex;
+    }
+
+    .divider {
+      flex-grow: 1;
     }
 
   </style>
@@ -56,7 +62,10 @@
       <button class="js-mute-button control-button" hidden>
         <i class="fa fa-volume-up" aria-hidden="true"></i>
       </button>
-      <button class="js-fullscreen-button control-button">Fullscreen</button>
+      <div class="divider"></div>
+      <button class="js-fullscreen-button control-button">
+        <i class="fa fa-expand" aria-hidden="true"></i>
+      </button>
     </div>
   </div>
 
